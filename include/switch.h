@@ -9,8 +9,8 @@ public:
 	void update();
 	void setupUsingDigitalPin(int pin);
 	void setupUsingAnalogPin(int pin);
-	void setupClickHandler(FunctionObject<void(void)> event_on);
-	void setupHoldHandler(FunctionObject<void(void)> event_off);
+	void setupTurnOnHandler(FunctionObject<void(void)> event_on);
+	void setupTurnOffHandler(FunctionObject<void(void)> event_off);
 
 private:
 	int m_pin;
