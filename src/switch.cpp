@@ -10,6 +10,11 @@ void Switch::update() {
 	} else {
 		read=digitalRead(m_pin);
 	}
+	if (read == 1 and read != m_last_read){
+		m_event_on();
+	} else if (read == 0 and read != m_last_read){
+		m_event_off();
+	}
 }
 
 void Switch::setupUsingDigitalPin(int pin) {
@@ -32,4 +37,5 @@ void Switch::setupTurnOffHandler(FunctionObject<void(void)> event_off) {
 	m_event_off = event_off;
 }
 
-void nofun() {}
+void tmpfun() {}
+
