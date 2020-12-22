@@ -1,0 +1,19 @@
+{
+"name": "Simple Switch",
+"version": "0.2.1",
+"repository":
+{
+    "type": "git",
+    "url": "https://github.com/fopeczek/mik_click.git"
+},
+"description": "A simple switch library for on off switches. ",
+"authors": [
+{
+	"name": "Mikołaj Krawczuk",
+	"email": "mikolaj@statystyka.net"
+}],
+"license": "Apache-2.0",
+"dependencies": {
+	"Silent/function_objects": "^1.0.0"
+}
+}
